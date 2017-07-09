@@ -1,0 +1,17 @@
+//i was really lazy here, i think
+//be better, future gut floral. 
+// also, a big internet thank you to yoda Turk for putting up with my everything 7.8.17 FFFFFF
+
+function factorialize(num) {
+  var facNum = 1;
+    if (num > 0) {
+      for (var i = 2; i <= num; i++) {
+       facNum *= i;
+      }
+      return facNum;
+    } else { 
+    	return 1;
+    }
+}
+
+factorialize(5);
