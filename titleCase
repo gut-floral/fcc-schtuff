@@ -1,0 +1,12 @@
+function titleCase(str) {
+  var tcStr = str.toLowerCase(); //lowercased - ok
+  tcStr = tcStr.split(' '); // split into an array of strings - ok
+    for(var i = 0; i < tcStr.length; i++) { // for loop to iterate - ok
+      tcStr[i] = tcStr[i].split(''); // split into an array of letters - ok
+      tcStr[i][0] = tcStr[i][0].toUpperCase(); //first letter of array accessed, uppercased - ok
+      tcStr[i] = tcStr[i].join(''); //item in array joined back together - ok
+  
+    }
+return tcStr.join(' '); //joined back into a string
+}
+titleCase("ziPPity dOO dah");
