@@ -1,0 +1,9 @@
+
+function confirmEnding(str, target) {
+  var endLength = target.length; // gets length of end string
+  var endExtract = str.substr(str.length - endLength);
+  if (target == endExtract) {
+  	return true;
+  } else return false; {
+ }
+}
