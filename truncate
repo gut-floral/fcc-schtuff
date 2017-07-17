@@ -1,0 +1,14 @@
+function truncateString(str, num) {
+    var dotHold = "...";
+    if (str.length > num) {
+        if (num >= 3) {
+            str = str.slice(0, (num - 3));
+            return str.concat(dotHold);
+        } else {
+            str = str.slice(0, num);
+            return str.concat(dotHold);
+        }
+    } else return str;
+}
+
+truncateString("Absolutely Longer", 2);
